@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+  padding: 0 10vh;
+  background: linear-gradient(62deg, rgba(149, 233, 227, 1) 30%, rgba(31, 190, 210, 1) 41%, rgba(11, 38, 50, 1) 85%);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@media (max-width: 980px), (max-height: 580px) {
+  body {
+    padding: 60px 20px;
+  }
+}
+
+.question-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.question-container h2 {
+  font-size: 24px;
+  color: #1f8197;
+  text-align: center;
+}
+
+.question-container .submit-button {
+  background-color: #1f8197;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.question-container .submit-button:hover {
+  background-color: #166575;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li{
+
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+}
+
+#StartSection{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    color: white;
+
+    background: linear-gradient(251deg, #00b8ff52 -53%, rgba(255, 255, 255, 0) 65%);
+    justify-content: center;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+
+    padding: 50px;
+    border-radius: 10px;
+
+}
+
+#StartSection a{
+
+    text-decoration: none;
+    background-color: #1f8197;
+    color: #fff;
+    border: none;
+    padding: 12px 26px;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3).3;
+    transition: background-color 0.3s ease;
+    
+}
+
+.finalSection{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* style.css */
+body {
+  margin: 0;  background: rgb(26, 25, 25);
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#content {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Overlay for glitch effect */
+.glitch-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  background: url('https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif') repeat; /* Exemple de texture glitch */
+  opacity: 0;
+  mix-blend-mode: difference;
+  animation: glitch-effect 0.2s steps(2, end) infinite;
+}
+
+/* Glitch animation for displacement */
+@keyframes glitch-effect {
+  0% { opacity: 0; transform: translate(0, 0); }
+  20% { opacity: 0.5; transform: translate(5px, -5px); }
+  40% { opacity: 1; transform: translate(-5px, 5px); }
+  60% { opacity: 0.5; transform: translate(5px, 5px); }
+  80% { opacity: 1; transform: translate(-5px, -5px); }
+  100% { opacity: 0; transform: translate(0, 0); }
+}
+
+
+/* style.css */
+
+/* Pour supprimer les marges par défaut */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Canvas en arrière-plan */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Derrière le questionnaire */
+}
+
+/* Conteneur de la question */
+.question-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2; /* Devant le canvas */
+  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent pour contraster */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: white; /* Couleur du texte */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Titre de la question */
+.question-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Options de la question */
+.options-list {
+  width: 20%;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;  
+}
+
+.options-list li {
+  margin: 10px 0;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #007BFF;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+
+.btn-restart{
+
+  background-color: #1f8197;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-cours {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    
+}
+
+.btn-cours:hover {
+    background-color: #45a049;
+}
+
+.cours-container {
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cours-container h1, .cours-container h2 {
+    color: #1f8197;
+}
+
+.cours-container ul {
+    list-style-type: disc;
+    margin: 20px 0 20px 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #1f8197;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #166573;
+}
+
+
+#coursSection{
+
+
+  padding: 5%;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.navbar {
+  width: 100%;
+  background-color: #1f8197;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #1f8197;
+  border-color: #1f8197;
+}
+
+.btn-logout {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: darkred;
+  color: white;
+  border-color: darkred;
+}
+
+.welcome-message {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.welcome-message {
+  font-size: 16px;
+}
+
+.btn-logout, .btn-login, .btn-register {
+  color: #fff;
+  text-decoration: none;
+  background-color: #166573;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.code-block {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.code-block {
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+.code-block .variable { color: #e06c75; } 
+.code-block .property { color: #d19a66; } 
+.code-block .value { color: #98c379; } 
+.code-block .selector { color: #61afef; } 

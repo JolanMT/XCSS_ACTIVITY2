@@ -1,0 +1,169 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quelle est l'extension d'un fichier SCSS ?",
+      "choices": [".scss", ".sass", ".css", ".style"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "question": "Qu'est-ce que SCSS ?",
+      "choices": [
+        "Un langage de programmation",
+        "Un préprocesseur CSS",
+        "Une bibliothèque JavaScript",
+        "Un framework CSS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "question": "Comment définit-on une variable en SCSS ?",
+      "choices": [
+        "$variable: value;",
+        "var(variable): value;",
+        "--variable: value;",
+        "variable = value;"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "question": "Quelle directive SCSS permet d'importer un fichier partiel ?",
+      "choices": ["@partial", "@include", "@import", "@require"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "question": "Quel est le préfixe utilisé pour les variables en SCSS ?",
+      "choices": ["$", "#", "--", "@@"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "question": "Quelle directive permet d'étendre un style existant en SCSS ?",
+      "choices": ["@extend", "@inherit", "@include", "@merge"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "question": "Quelle fonction SCSS permet d'éclaircir une couleur ?",
+      "choices": ["darken()", "lighten()", "saturate()", "adjust()"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "question": "Quel outil est requis pour compiler un fichier SCSS en CSS ?",
+      "choices": [
+        "Un navigateur moderne",
+        "Un compilateur SCSS comme Sass",
+        "Un framework JavaScript",
+        "Un serveur Node.js"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "Quel est l'objectif principal d'une mixin en SCSS ?",
+      "choices": [
+        "Définir des règles CSS globales",
+        "Créer des blocs de styles réutilisables",
+        "Imbriquer des sélecteurs",
+        "Ajouter des propriétés CSS dynamiquement"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "question": "Quelle est la bonne syntaxe pour utiliser une mixin avec un argument en SCSS ?",
+      "choices": [
+        "@include mixin-name(argument);",
+        "@mixin mixin-name(argument);",
+        "include mixin-name(argument);",
+        "use mixin-name(argument);"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "question": "Comment créer une boucle dans un fichier SCSS ?",
+      "choices": ["@loop", "@for", "@each", "@while"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "question": "Que renvoie la fonction SCSS `map-get()` ?",
+      "choices": [
+        "Une liste de clés d'une map",
+        "Une map vide",
+        "La valeur associée à une clé dans une map",
+        "Un tableau d'éléments SCSS"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "question": "Quelle fonction SCSS permet de fusionner deux listes ?",
+      "choices": ["append()", "merge()", "join()", "combine()"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 14,
+      "question": "Quel caractère est utilisé pour définir un fichier partiel SCSS ?",
+      "choices": ["_", "-", ".", "~"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "question": "Quel mot-clé SCSS est utilisé pour les sélecteurs imbriqués ?",
+      "choices": ["@", "$", "&", "%"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "question": "Quelle est la différence principale entre Sass et SCSS ?",
+      "choices": [
+        "Sass est une syntaxe plus moderne que SCSS",
+        "SCSS utilise une syntaxe compatible avec CSS, Sass a une syntaxe spécifique",
+        "Sass nécessite un compilateur différent de SCSS",
+        "SCSS ne supporte pas les mixins, contrairement à Sass"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "question": "Quelle fonction SCSS retourne le nombre d'éléments d'une liste ?",
+      "choices": ["length()", "count()", "size()", "elements()"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "question": "Que se passe-t-il si une variable SCSS est redéfinie sans `!default` ?",
+      "choices": [
+        "La variable initiale est conservée",
+        "La variable est écrasée",
+        "Une erreur de compilation est déclenchée",
+        "La variable devient locale"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "question": "Quelle directive SCSS permet de conditionner un style selon une variable ?",
+      "choices": ["@if", "@else", "@when", "@check"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "question": "Comment appliquer une fonction SCSS personnalisée à une liste de valeurs ?",
+      "choices": [
+        "Avec `@apply`",
+        "Avec `@mixin`",
+        "Avec `@each`",
+        "Avec `@function`"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}

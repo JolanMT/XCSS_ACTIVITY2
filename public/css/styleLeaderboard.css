@@ -1,0 +1,94 @@
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    position: relative;
+    min-height: 40vh;
+}
+
+.podium-column {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.podium-column:nth-child(2) {
+    /* Placer le 1er au centre */
+    order: -1;
+}
+
+.podium-column svg {
+    display: block;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+
+
+.podium-rank {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.username, .score {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Rectangles avec une base alignée */
+.podium-column svg {
+    position: relative;
+    margin-top: auto;
+    width: 80px;
+}
+
+.podium-column:nth-child(1) svg {
+    height: 180px; 
+}
+
+.podium-column:nth-child(2) svg {
+    height: 120px; 
+}
+
+.podium-column:nth-child(3) svg {
+    height: 100px;
+}
+
+
+.podium-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.honorables {
+    margin-top: 40px;
+}
+
+.honorable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.honorable .profile-pic {
+    margin-right: 10px;
+}
